@@ -1,0 +1,77 @@
+.headerHome {
+    width: 100vw;
+    height: 100vh;
+    background-color: #004AAD;
+}
+
+.headerMenu {
+    width: 100vw;
+    min-height: 75vh;
+    display: flex;
+    justify-content: center;
+    background-image: url("../Assent/SlidedHeader/HeaderSlide.jpg");
+    background-size: cover;
+
+}
+
+.containerHeaderMenu {
+    width: 80%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+.herderMenuLogo {
+    width: 50%;
+    height: 100%;
+    padding: 55px 0 0 150px;
+}
+
+.herderMenuLogo img {
+    width: 125px;
+    height: 125px;
+}
+
+.headerMenuUl {
+    width: 50%;
+    display: flex;
+    padding: 125px 0 0 0;
+}
+
+.headerMenuUl ul {
+    display: flex;
+    cursor: pointer;
+}
+
+.headerMenuUl ul li {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+    width: 150px;
+    text-decoration: none;
+    list-style: none;
+    font-size: 2.5rem;
+    white-space: nowrap;
+    color: #FEBD06;
+    font-family: "TS-Country";
+}
+
+.headerMenuUl ul li#ContatoMenu {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    width: 255px;
+    color: #19962D;
+}
+
+.headerMenuUl ul li#MenuAtivo,
+.headerMenuUl ul li:hover {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+
+.headerMenuUl ul li:hover {
+
+    transition: background 0.5s ease;
+    transform: scale(1.1);
+}

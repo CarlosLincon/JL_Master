@@ -31,6 +31,7 @@
 .herderMenuLogo img {
     width: 125px;
     height: 125px;
+    filter: drop-shadow(5px 5px 5px #222);
 }
 
 .headerMenuUl {
@@ -104,7 +105,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    overflow-y: hidden;
+
 }
 
 .headerSobreTitulo div.headerSobreTitulo {
@@ -148,7 +149,7 @@
 
 .headerSobreTituloDivSobre {
     text-align: justify;
-   
+
 }
 
 .headerSobreTituloDivSobre span {
@@ -165,11 +166,98 @@
 .containerProdutros {
     height: 100vh;
     width: 100vw;
-    background-color: #F9B850;
 
+    display: flex;
 }
 
 
-.sobreProdutos{
-    
+.sobreProdutos {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.sobreProdutoLogo {
+    width: 100%;
+    height: 23%;
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.sobreProdutoLogo img {
+    margin-left: 100px;
+    width: 225px;
+    height: 225px;
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
+.sobreProdutosInformacoes {
+    width: 100%;
+    height: 75%;
+}
+
+
+.sobreProdutosInformacoesContainerLogo {
+    position: relative;
+    width: 100%;
+    height: 25%;
+}
+
+.sobreProdutosInformacoesContainerLogo img {
+    width: 650px;
+    position: absolute;
+    top: -90px;
+    left: 20px;
+
+}
+
+.sobreProdutosInformacoesContainer {
+    width: 80%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobreProdutosInformacoesContainer span {
+    width: 90%;
+    height: 25%;
+    font-size: 2.3rem;
+    padding: 2%;
+    text-align: justify;
+    font-family: "MedulaOne";
+    color: #f5f5f5;
+}
+
+
+
+.sobreProdutosImagem {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobreProdutosImagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.bg_video{
+	position: fixed; 
+	right: 0; 
+	bottom: 0;
+	min-width: 100%; 
+	min-height: 100%;
+	width: auto; 
+	height: auto; 
+	z-index: -1000;
+	background: url(../Assent/home/VideoProduto.mp4) no-repeat;
+	background-size: cover; 
 }

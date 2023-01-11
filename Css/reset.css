@@ -19,3 +19,5 @@ body{
     font-family: "MedulaOne";
     src: url("../Font/MedulaOne-Regular.ttf") format("truetype");
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;1,100;1,200&display=swap');

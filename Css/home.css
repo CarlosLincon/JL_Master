@@ -16,16 +16,20 @@
 }
 
 .containerHeaderMenu {
-    width: 80%;
-    height: 25%;
+    width: 100%;
+    height: 15%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    border-radius: 10px;
 }
 
 .herderMenuLogo {
     width: 50%;
+    display: flex;
+    justify-content: center;
     height: 100%;
-    padding: 55px 0 0 150px;
+
 }
 
 .herderMenuLogo img {
@@ -35,41 +39,47 @@
 }
 
 .headerMenuUl {
-    width: 50%;
+    width: 75%;
+    height: 125px;
     display: flex;
-    padding: 105px 0 0 0;
+    justify-content: center;
+
 }
 
 .headerMenuUl ul {
     display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
 }
 
 .headerMenuUl ul li {
-    height: 50px;
+    height: 55px;
     display: flex;
+    align-items: center;
     justify-content: center;
     margin-right: 10px;
     width: 150px;
     text-decoration: none;
     list-style: none;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     white-space: nowrap;
-    color: #FEBD06;
+    color: #f5f5f5;
     font-family: "TS-Country";
 }
 
 .headerMenuUl ul li#ContatoMenu {
-    background-color: #f5f5f5;
+    background-color: #0089f7;
     border-radius: 10px;
-    width: 255px;
-    color: #19962D;
+    width: 190px;
+    color: #f5f5f5;
 }
 
 .headerMenuUl ul li#MenuAtivo,
 .headerMenuUl ul li:hover {
-    background-color: #f5f5f5;
+    background-color: #0089f7;
     border-radius: 10px;
+    color: #f5f5f5;
 }
 
 .headerMenuUl ul li:hover {
@@ -157,6 +167,7 @@
     font-size: 2.0rem;
     color: #f5f5f5;
     padding: 2%;
+
 }
 
 
@@ -166,7 +177,6 @@
 .containerProdutros {
     height: 100vh;
     width: 100vw;
-
     display: flex;
 }
 
@@ -177,6 +187,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+
 }
 
 
@@ -247,15 +259,243 @@
     width: 100%;
     height: 100%;
     object-fit: contain;
+    filter: drop-shadow(5px 5px 5px #222);
 }
 
-.bg_video{
-	position: fixed; 
-	right: 0; 
-	bottom: 0;
-	min-width: 100%; 
-	min-height: 100%;
-	width: auto; 
-	height: auto; 
-	z-index: -1000;
+
+
+
+.sobreProdutosButton {
+
+    width: 350px;
+    height: 250px;
+    position: relative;
+}
+
+
+.sobreProdutosButton button {
+    width: 250px;
+    height: 75px;
+    border-radius: 20px;
+    border: none;
+    background-color: #004AAD;
+    color: #f5f5f5;
+    position: absolute;
+    left: -85px;
+    top: -75px;
+    font-family: "MedulaOne";
+    font-size: 2.0rem;
+    cursor: pointer;
+
+}
+
+.sobreProdutosButton button:hover {
+    transform: scale(1.1);
+}
+
+
+.bg_video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1000;
+}
+
+/* Parceiros */
+
+.containerParceiros {
+    width: 100vw;
+    height: 100vh;
+    background-color: #f5f5f5;
+    background-image: url("../Assent/home/FundoParceiros.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0 135%;
+}
+
+
+#backgroundSectionParceiros {
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.continainerPaceirosTitulo {
+    width: 80%;
+    height: 15%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.continainerPaceirosTitulo img {
+    width: 225px;
+    height: 225px;
+    filter: drop-shadow(5px 5px 5px #222);
+    margin-top: 10px;
+}
+
+.containerDivParceirosSpan {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-family: "MedulaOne";
+    font-size: 2.0rem;
+}
+
+.containerParceirosSpan {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    height: 15%;
+    font-size: 3rem;
+    color: #1A4789;
+}
+
+.containerParceirosSpan :nth-of-type(1) {
+    margin-top: 155px;
+
+}
+
+.containerDivParceirosSpan .containerParceirosSpan:first-child {
+    color: #FEBD06;
+}
+
+.continainerPaceirosFotos {
+    width: 70%;
+    height: 75%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        ". . . ."
+        ". . . ."
+        ". . . .";
+    justify-items: center;
+    align-items: center;
+}
+
+
+
+/* section informação */
+
+
+.containerInformação {
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.containerInformaçãoTitulo {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 200px;
+    color: #FEBD06;
+    font-size: 2.0rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.containerInformaçãoContainerMaps {
+    width: 90%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.containerInformaçãoContainerMapsDiv {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+
+.containerInformaçãoContainerDiv {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.containerInformaçãoContainerDiv .containerInformaçãoContainerDivInfo {
+    width: 55%;
+    position: relative;
+    margin: 10px;
+    height: 350px;
+    background-color: #004AAD;
+    border-radius: 10px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+
+.containerInformaçãoContainerDivInfoSpanInfo {
+    width: 80%;
+    font-size: 1.4rem;
+    height: 23.33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+span.containerInformaçãoContainerDivInfoSpan {
+    width: 80%;
+    height: 35%;
+    display: flex;
+    font-size: 2.0rem;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    color: #FEBD06;
+}
+
+.containerInformaçãoContainerDiv .containerInformaçãoContainerDivInfo:nth-child(2) span:nth-child(2),
+.containerInformaçãoContainerDiv .containerInformaçãoContainerDivInfo:nth-child(2) span:nth-child(3) {
+    width: 35%;
+}
+
+
+.containerInformaçãoContainerDiv .containerInformaçãoContainerDivInfo :nth-child(3) {
+    border-top: 2px solid #FEBD06;
+}
+
+.containerInformaçãoContainerDiv .containerInformaçãoContainerDivInfo div {
+    position: absolute;
+    top: 7%;
+    left: 5%;
+    width: 250px;
+    height: 250px;
+
+}
+
+.containerInformaçãoContainerDiv .containerInformaçãoContainerDivInfo div img {
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
 }

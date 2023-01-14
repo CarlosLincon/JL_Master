@@ -1,0 +1,96 @@
+.contatoWhatsapp {
+    width: 280px;
+    height: 50px;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    z-index: 10000;
+    transform: all 1s ease;
+
+}
+
+.contatoWhatsapp a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.divContatoLogo {
+    width: 64px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.divContatoInformacao {
+    display: flex;
+    width: 0;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: transparent;
+    margin-left: 10px;
+
+}
+
+.divContatoLogo img {
+    width: 100%;
+    height: 64px;
+    object-fit: contain;
+    border-radius: 10px;
+
+}
+
+
+.contatoWhatsapp a:hover>.divContatoInformacao {
+    width: 75%;
+    color: rgb(5, 139, 28);
+    transform: translateX(-5px);
+    transition: all 1s ease-in-out;
+
+}
+
+@media screen and (min-width: 280px) and (max-width: 599px) {
+
+    .contatoWhatsapp {
+        width: 80px;
+        height: 80px;
+        position: fixed;
+        right: 30px;
+        bottom: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10000;
+        background-color: rgb(23, 179, 3);
+        border-radius: 80px;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    }
+
+    .divContatoLogo {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: none;
+        border-radius: 80px;
+    }
+
+    .divContatoInformacao {
+        display: none;
+
+    }
+
+}

@@ -1,31 +1,36 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JL Master - Estrutura</title>
+  <title>JL Master - Laticínio</title>
   <link rel="shortcut icon" href="./Assent/Logo/logo_jlmaster.png" type="image/x-icon">
   <link rel="stylesheet" href="./Css/reset.css">
-  <link rel="stylesheet" href="./Css/home.css">
+  <link rel="stylesheet" href="./Css/estruturaStyle.css">
+ 
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="./Css/indexStyle.css">
+  <link rel="stylesheet" href="./Css/styleIconWhatsapp.css">
 </head>
 
 <body>
   <section class="headerHome">
     <div class="headerMenu">
       <div class="containerHeaderMenu">
-        <div class="herderMenuLogo">
-          <img src="./Assent/Logo/logo_jlmaster.png" alt="Logo JL Master">
-        </div>
-        <div class="headerMenuUl">
-          <ul>
-            <li id="MenuAtivo">Home</li>
-            <li>Estrutura</li>
-            <li>Produtos</li>
-            <li>Clientes</li>
-            <li id="ContatoMenu">Fale Conosco</li>
-          </ul>
+        <div class="containerHeaderMenuDiv">
+          <div class="herderMenuLogo">
+            <img src="./Assent/Logo/logo_jlmaster.png" alt="Logo JL Master">
+          </div>
+          <div class="headerMenuUl">
+            <ul>
+              <li id="MenuAtivo"> <a href="./home.html">Home</a> </li>
+              <li><a href="./estrutura.html">Estrutura</a> </li>
+              <li><a href="./produtos.html">Produtos</a></li>
+              <li><a href="#clientes">Clientes</a></li>
+              <li id="ContatoMenu">Fale Conosco</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -33,51 +38,104 @@
       <div class="headerSobreTitulo">
         <div class="headerSobreTituloDiv">
           <div class="headerSobreTituloDivSpan">
-            <span>SABOR PURO</span>
+            <span>Estrutura</span>
           </div>
           <div class="headerSobreTituloDivSpan">
-            <span>É A NOSSA TRADIÇÃO!</span>
+            <span>E a nossa equipe!</span>
           </div>
         </div>
         <div class="headerSobreTituloDivSobre">
-          <span>Tudo que é de casa é mais gostoso, porque é feito com mais carinho, cuidado e amor. Foi assim que nasceu
-            a
-            nossa empresa: Em 1994, numa fazenda no interior da Bahia, em família, todos trabalhando para juntos
-            oferecerem produtos naturais e de alta qualidade.</span>
+          <span>Nossa equipe conta com profissionais qualificados e experientes, com especialização nas principais áreas
+            para fabricação de nossos produtos!</span>
         </div>
       </div>
       <img src="./Assent/home/Sem nome (1920 × 250 px).png" alt="Imagem De fundo de uma vaga sobre a grama">
     </div>
   </section>
-  <section class="containerProdutros">
-    <video autoplay muted loop class="bg_video">
-      <source src="./Assent/home/VideoProduto.mp4" type="video/mp4">
-    </video>
-    <div class="sobreProdutos">
-      <div class="sobreProdutoLogo">
-        <img src="./Assent/Logo/logo_jlmaster.png" alt="logo JLmaster">
-      </div>
-      <div class="sobreProdutosInformacoes">
-        <div class="sobreProdutosInformacoesContainerLogo">
-          <img src="./Assent/home/letreiro.png" alt="Nosso Produtos">
-        </div>
-        <div class="sobreProdutosInformacoesContainer">
-          <span>
-            Conheça a linha de laticínios que muito encanta o paladar dos baianos com sabor, saúde e altíssima
-            qualidade, há quase 30 anos.
-          </span>
-        </div>
-      </div>
-      <div class="sobreProdutosButton">
-        <button>Catálogo On-line</button>
-      </div>
-    </div>
-    <div class="sobreProdutosImagem">
-      <img src="./Assent/home/produtosComFundosColoridos.png" alt="Fotos dos Produtos">
-    </div>
-  </section>
+  <section class="containerEstruturaSection">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
 
+    <div class="container">
+      <div class="tituloContainer">
+        <div class="titulo">
+          <h1>Nossas Fotos</h1>
+        </div>
+      </div>
+      <div class="portfolio-menu mt-2 mb-4">
+        <ul>
+          <li class="btn btn-outline-dark active" data-filter="*">Todos</li>
+          <li class="btn btn-outline-dark" data-filter=".estrutura">Estrutura</li>
+          <li class="btn btn-outline-dark" data-filter=".itens">Produtos</li>
+          <li class="btn btn-outline-dark text" data-filter=".producao">Produção</li>
+        </ul>
+      </div>
+      <div class="portfolio-item row">
+        <div class="item estrutura col-lg-3 col-md-4 col-6 col-sm">
+          <a href="./Assent/estrutura/master_milk_fazenda-13-min.jpg"
+            class="fancylight popup-btn" data-fancybox-group="light">
+            <img class="img-fluid"
+              src="./Assent/estrutura/7.jpg"
+              alt="">
+          </a>
+        </div>
+        <div class="item estrutura col-lg-3 col-md-4 col-6 col-sm">
+          <a href="./Assent/estrutura/master_milk_fazenda-16-min.jpg"
+            class="fancylight popup-btn" data-fancybox-group="light">
+            <img class="img-fluid" src="./Assent/estrutura/5.jpg"
+              alt="">
+          </a>
+        </div>
+
+        <div class="item producao col-lg-3 col-md-4 col-6 col-sm">
+          <a href="./Assent/estrutura/master_milk_fazenda-1-min.jpg"
+            class="fancylight popup-btn" data-fancybox-group="light">
+            <img class="img-fluid" src="./Assent/estrutura/1.jpg"
+              alt="">
+          </a>
+        </div>
+        
+        <div class="item itens col-lg-3 col-md-4 col-6 col-sm">
+          <a href="./Assent/estrutura/master_milk_fazenda-7-min.jpg"
+            class="fancylight popup-btn" data-fancybox-group="light">
+            <img class="img-fluid"
+              src="./Assent/estrutura/2.jpg"
+              alt="">
+          </a>
+        </div>
+          
+        <div class="item producao col-lg-3 col-md-4 col-6 col-sm">
+          <a href="./Assent/estrutura/master_milk_fazenda-9-min.jpg"
+            class="fancylight popup-btn" data-fancybox-group="light">
+            <img class="img-fluid"
+              src="./Assent/estrutura/3.jpg"
+              alt="">
+          </a>
+        </div>  
+        <div class="item itens col-lg-3 col-md-4 col-6 col-sm">
+          <a href="./Assent/estrutura/master_milk_fazenda-10-min.jpg"
+            class="fancylight popup-btn" data-fancybox-group="light">
+            <img class="img-fluid"
+              src="./Assent/estrutura/6.jpg"
+              alt="">
+          </a>
+        </div>
+        <div class="item itens col-lg-3 col-md-4 col-6 col-sm">
+          <a href="./Assent/estrutura/master_milk_fazenda-12-min.jpg"
+            class="fancylight popup-btn" data-fancybox-group="light">
+            <img class="img-fluid"
+              src="./Assent/estrutura/4.jpg"
+              alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
   <section class="containerParceiros">
+    <a name="clientes"></a>
     <div class="continainerPaceirosTitulo">
       <div class="containerDivParceirosSpan">
         <div class="containerParceirosSpan">
@@ -118,21 +176,26 @@
       <div class="containerInformaçãoContainerDiv">
         <div class="containerInformaçãoContainerDivInfo">
           <span class="containerInformaçãoContainerDivInfoSpan">
-            <h6>Localização</h6>
+            <span>Localização</span>
           </span>
           <span class="containerInformaçãoContainerDivInfoSpanInfo">Rod.BA 522, Km 05 Via Matoim, Candeias / BA.</span>
         </div>
         <div class="containerInformaçãoContainerDivInfo">
           <span class="containerInformaçãoContainerDivInfoSpan">
-            <h6>Fale com a gente</h6>
+            <span>Fale com a gente</span>
           </span>
-          <span class="containerInformaçãoContainerDivInfoSpanInfo" id="telefone1"> <img src="./Assent/home/logoTelefone.png" alt="logo Telefone">71 3381-6477</span>
-          <span class="containerInformaçãoContainerDivInfoSpanInfo" id="telefone2"> <img src="./Assent/home/logowhatsapp.png" alt="logo whatsapp">71 99287-4948</span>
-         
+          <span class="containerInformaçãoContainerDivInfoSpanInfo" id="telefone1"> <img
+              src="./Assent/home/logoTelefone.png" alt="logo Telefone"><a href="tel:713381-6477">(71)
+              3381-6477</a></span>
+          <span class="containerInformaçãoContainerDivInfoSpanInfo" id="telefone2"> <img
+              src="./Assent/home/logowhatsapp.png" alt="logo whatsapp"><a
+              href="https://api.whatsapp.com/send?phone=5571992874948&text=Seja%20bem-vindo%20a%20JL%20Master%20Latic%C3%ADnios!%20Como%20posso%20te%20ajudar%3F">
+              (71) 99287-4948</a></span>
+
         </div>
         <div class="containerInformaçãoContainerDivInfo">
           <span class="containerInformaçãoContainerDivInfoSpan">
-            <h6>Horarios</h6>
+            <span>Horarios</span>
           </span>
           <span class="containerInformaçãoContainerDivInfoSpanInfo">De Segunda a Sexta das: 8:00 até 17:00
             Sábado e Domingos estamos fechados</span>
@@ -140,6 +203,19 @@
       </div>
     </div>
   </section>
+
+  <section class="contatoWhatsapp">
+    <a
+      href="https://api.whatsapp.com/send?phone=5571992874948&text=Seja%20bem-vindo%20a%20JL%20Master%20Latic%C3%ADnios!%20Como%20posso%20te%20ajudar%3F">
+      <div class="divContatoLogo">
+        <img src="./Assent/home/logowhatsapp.png" alt="Logo whatsapp">
+      </div>
+      <div class="divContatoInformacao">
+        <span>Fale com a gente!</span>
+      </div>
+    </a>
+  </section>
+
   <footer>
     <div class="footerLogo"><img src="./Assent/Logo/logo_jlmaster.png" alt="Logo Jl_Master"></div>
     <div class="footerContainer">
@@ -156,7 +232,7 @@
         </div>
         <div class="footerContainerDivContainerInfo">
           <span>Telefone</span>
-          <span>(12) 3456 -7890</span>
+          <span>(71) 3381-6477</span>
         </div>
       </div>
       <div class="footerContainerDivContainerLogo">
@@ -172,11 +248,12 @@
         </a>
       </div>
       <div class="footerContainerDivContainerfooterInfo">
-        <span> 	&#169; 2023 JL Master - Laticínio. Todos os direitos reservados! Desenvolvido por <a target="_blank"
-            href="https://www.instagram.com/graficalboficial/">Gráfica LB.</a></div>
-      </span>
+        <span> &#169; 2023 JL Master - Laticínio. Todos os direitos reservados! Desenvolvido por <a target="_blank"
+            href="https://www.instagram.com/graficalboficial/">Gráfica LB.</a>
+      </div>
+
     </div>
   </footer>
-</body>
 
-</html>
+  <script src="./JavaScript/estrutura.js"></script>
+</body>

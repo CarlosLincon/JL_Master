@@ -91,3 +91,8 @@ figure img.mfp-img{
     -o-transition: all 05s ease;
     transition: all .5s ease;
 }
+
+
+.mfp-container.mfp-image-holder.mfp-s-ready{
+    overflow-y: hidden;
+}

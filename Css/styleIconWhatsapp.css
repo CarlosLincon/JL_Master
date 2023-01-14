@@ -73,9 +73,7 @@
         justify-content: center;
         align-items: center;
         z-index: 10000;
-        background-color: rgb(23, 179, 3);
-        border-radius: 80px;
-        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        border-radius: 10px;
     }
 
     .divContatoLogo {
@@ -85,7 +83,7 @@
         justify-content: center;
         align-items: center;
         background-color: none;
-        border-radius: 80px;
+        border-radius: 10px;
     }
 
     .divContatoInformacao {

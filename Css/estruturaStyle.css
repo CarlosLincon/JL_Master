@@ -35,7 +35,7 @@
 
 
 .img-fluid{
-    border: 1px solid #000;
+    border: 1px solid #0747bd;
 }
 
 .tituloContainer{
@@ -52,3 +52,42 @@
     color: #FEBD06;
 }
 
+figure img.mfp-img{
+    max-height: 90% !important;
+    height: 80%!important;
+    object-fit: cover;
+}
+
+
+.text-primary,
+.blockquote-footer{
+    color: #007bff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+}
+
+.text-primary:hover,
+.blockquote-footer:hover{
+    cursor: help;
+    color: #007bff !important;
+    white-space: initial;
+    overflow: initial;
+    text-overflow: initial;
+    
+}
+
+.portfolio-menu ul li {
+    display: inline-block;
+    margin: 0;
+    list-style: none;
+    padding: 10px 15px;
+    margin-top: 5px;
+    cursor: pointer;
+    -webkit-transition: all 05s ease;
+    -moz-transition: all 05s ease;
+    -ms-transition: all 05s ease;
+    -o-transition: all 05s ease;
+    transition: all .5s ease;
+}

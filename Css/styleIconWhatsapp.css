@@ -1,10 +1,19 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .contatoWhatsapp {
     width: 280px;
     height: 50px;
     position: fixed;
     right: 40px;
     bottom: 40px;
-    z-index: 10000;
+    z-index: 10;
+    -webkit-transform: all 1s ease;
+    -ms-transform: all 1s ease;
     transform: all 1s ease;
 
 }
@@ -12,8 +21,14 @@
 .contatoWhatsapp a {
     width: 100%;
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     text-decoration: none;
 }
@@ -21,23 +36,36 @@
 .divContatoLogo {
     width: 64px;
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
-    
+
 }
 
 .divContatoInformacao {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 0;
     height: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     background-color: #fff;
     font-family: 'Poppins', sans-serif;
     font-size: 1.2rem;
     position: relative;
     border-radius: 10px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     color: transparent;
     margin-left: 10px;
@@ -47,6 +75,7 @@
 .divContatoLogo img {
     width: 100%;
     height: 64px;
+    -o-object-fit: contain;
     object-fit: contain;
     border-radius: 10px;
 
@@ -56,7 +85,11 @@
 .contatoWhatsapp a:hover>.divContatoInformacao {
     width: 75%;
     color: rgb(5, 139, 28);
+    -webkit-transform: translateX(-5px);
+    -ms-transform: translateX(-5px);
     transform: translateX(-5px);
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
 
 }
@@ -69,18 +102,30 @@
         position: fixed;
         right: 30px;
         bottom: 40px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
-        z-index: 10000;
+        z-index: 100;
         border-radius: 10px;
     }
 
     .divContatoLogo {
         width: 100%;
         height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         background-color: none;
         border-radius: 10px;

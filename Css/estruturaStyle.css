@@ -1,10 +1,23 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .containerEstruturaSection {
     width: 100vw;
     min-height: 100vh;
     height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 
@@ -18,9 +31,9 @@
 	padding:10px 15px;
 	cursor:pointer;
 	-webkit-transition:all 05s ease;
-	-moz-transition:all 05s ease;
-	-ms-transition:all 05s ease;
 	-o-transition:all 05s ease;
+	-webkit-transition:all .5s ease;
+	-o-transition:all .5s ease;
 	transition:all .5s ease;
 }
 
@@ -44,9 +57,15 @@
 }
 
 .titulo{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-family: "MedulaOne";
     font-size: 3.0rem;
     color: #FEBD06;
@@ -55,7 +74,8 @@
 figure img.mfp-img{
     max-height: 90% !important;
     height: 80%!important;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 
@@ -64,7 +84,8 @@ figure img.mfp-img{
     color: #007bff;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
     
 }
 
@@ -74,7 +95,8 @@ figure img.mfp-img{
     color: #007bff !important;
     white-space: initial;
     overflow: initial;
-    text-overflow: initial;
+    -o-text-overflow: initial;
+       text-overflow: initial;
     
 }
 
@@ -86,13 +108,14 @@ figure img.mfp-img{
     margin-top: 5px;
     cursor: pointer;
     -webkit-transition: all 05s ease;
-    -moz-transition: all 05s ease;
-    -ms-transition: all 05s ease;
     -o-transition: all 05s ease;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
     transition: all .5s ease;
 }
 
 
 .mfp-container.mfp-image-holder.mfp-s-ready{
     overflow-y: hidden;
+    z-index: 1000;
 }

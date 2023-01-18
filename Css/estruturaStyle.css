@@ -72,8 +72,8 @@
 }
 
 figure img.mfp-img{
-    max-height: 90% !important;
-    height: 80%!important;
+    max-height: 705px !important;
+    height: auto!important;
     -o-object-fit: cover;
        object-fit: cover;
 }
@@ -116,6 +116,6 @@ figure img.mfp-img{
 
 
 .mfp-container.mfp-image-holder.mfp-s-ready{
-    overflow-y: hidden;
+   
     z-index: 1000;
 }
